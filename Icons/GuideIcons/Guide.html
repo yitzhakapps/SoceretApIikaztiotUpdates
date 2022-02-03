@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Rubik&display=swap' rel='stylesheet'>
+<meta charset="utf-8">
+<style>
+body {
+    font-family: 'Rubik';
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+</style>
+</head>
+<body dir="rtl" align="center">
+
+<p>בס"ד</p>
+
+
+<h2>מדריך שימוש</h2>
+<p>הוראות מפורטות לשימוש במכשיר</p><br>
+
+<button class="collapsible">מידע כללי</button>
+
+<div class="content">
+<p>אפליקציית xDrip משמשת להצגת נתוני הסוכר
+ותומכת במשדרים של Dexcom מסוג G5/G6 , וב-
+Libre FreeStyle בתוספת מכשיר קטן המוצמד אל 
+החיישן ומשדר את הנתונים אל xDrip.</p>
+
+<p>אפליקציית G6 Dexcom הותאמה עבור ציבור שומרי 
+התוה"מ לפיכך חלק מהאפשרויות נחסמו , ובחלקם 
+נכתב לא ללחוץ , לחיצה על אפשרות מסוג זה תגרום 
+לכיבוי האפליקציה , במקרה ולחצתם יש להפעיל שוב 
+את האפליקציה ולהיכנס אל < הגדרות < מבט מהיר 
+לכבות ולהדליק את המתג כדי שגרף המגמה יוצג 
+בחלונית ההתראות.</p>
+
+<p>בעת חיבור משדר חדש או חיבור ראשון , חלונית 
+בקשת התאמה תוצג , יש לסמן ✓ בשאלה וללחוץ על 
+אישור.</p>
+</div>
+
+<button class="collapsible">תקלות נפוצות</button>
+
+<div class="content">
+<p>לעיתים יתכן ניתוק הגורם להפסקת קבלת הנתונים 
+מהמשדר , אפשר לנסות כמה דרכים:
+1.לכבות ולהדליק את ה-Bluetooth. 
+2.להיכנס להגדרות המכשיר < אפליקציות והתראות 
+< הצגת כל האפליקציות < חפשו את האפליקציה 
+שהפסיקה לקבל נתונים ) Dexcom או xDrip > ) 
+לחצו על אילוץ עצירה ואישור < כעת היכנסו 
+לאפליקציה כרגיל.
+3. בצעו כיבוי והפעלה למכשיר .</p>
+</div>
+
+<button class="collapsible">שגיאת ריילילינק</button>
+
+<div class="content">
+<p>כשאפליקציית AndroidAPS
+מתריעה על משאבה אינה זמינה (מכיון שהריילילנק 
+לא מחובר) והריילילינק לא מתחבר אוטומטי יש לבצע 
+את השלבים הבאים:
+הכנסו לאפליקציית AndroidAPS > 
+עברו לדף omnipod > לחצו על 3 פסים בצד שמאל למעלה >
+גללו לשורה העדפות Omnipod > לחצו על תצורת ריילילינק >
+לחצו על
+הסרה ואישור > כעת היכנסו להגדרות המכשיר > 
+אפליקציות והתראות > הצגת כל האפליקציות > 
+חפשו את AndroidAPS > לחצו על אילוץ עצירה 
+ואישור > כעת היכנסו לאפליקציית AndroidAPS
+והמתינו 10 שניות > עברו לדף omnipod > לחצו על 3 פסים בצד שמאל למעלה >
+גללו לשורה העדפות Omnipod > לחצו על תצורת ריילילינק
+> לחצו על כפתור סרוק > השם של הריילילינק יוצג , 
+לחצו עליו והמתינו מס' שניות עד לחיבור חדש > עברו 
+ללשונית Omnipod באפליקציה ובסטטוס מצב 
+ריילילינק יהיה כתוב מחובר.</p>
+</div>
+
+<button class="collapsible">אפליקציית xDrip</button>
+
+<div class="content">
+<p>הפעלת סנסור בפעם הראשונה</p>
+
+<p> תמונה מס' 1 </p>
+<p> הכנסו לאפליקציית xDrip ופעלו ע"פ התמונות </p>
+<img src="GuideIcons/xDrip/01.png" width="240" height="320">
+  
+
+<p> תמונה מס' 2 </p>
+<p> גללו ללמטה </p>
+<img src="GuideIcons/xDrip/02.png" width="240" height="320">
+  
+
+<p> תמונה מס' 3 </p>
+<img src="GuideIcons/xDrip/03.png" width="240" height="320">
+  
+
+<p> תמונה מס' 4 </p>
+<p> בחרו בסוג הסנסור בו אתם משתמשים (משתמשי ליברה ראו המשך למטה תמונה מס' 36) </p>
+<img src="GuideIcons/xDrip/04.png" width="240" height="320">
+  
+
+<p> תמונה מס' 5 </p>
+<img src="GuideIcons/xDrip/05.png" width="240" height="320">
+  
+
+<p> תמונה מס' 6 </p>
+<img src="GuideIcons/xDrip/06.png" width="240" height="320">
+  
+
+<p> תמונה מס' 7 </p>
+<p> מחקו את האותיות האלו </p>
+<img src="GuideIcons/xDrip/07.png" width="240" height="320">
+  
+
+<p> תמונה מס' 8 </p>
+<p> הזינו את כתובת המשדר </p>
+<img src="GuideIcons/xDrip/08.png" width="240" height="320">
+  
+
+<p> תמונה מס' 9 </p>
+<img src="GuideIcons/xDrip/09.png" width="240" height="320">
+  
+
+<p> תמונה מס' 10 </p>
+<img src="GuideIcons/xDrip/10.png" width="240" height="320">
+  
+
+<p> תמונה מס' 11 </p>
+<img src="GuideIcons/xDrip/11.png" width="240" height="320">
+  
+
+<p> תמונה מס' 12 </p>
+<img src="GuideIcons/xDrip/12.png" width="240" height="320">
+  
+
+<p> תמונה מס' 13 </p>
+<img src="GuideIcons/xDrip/13.png" width="240" height="320">
+  
+
+<p> תמונה מס' 14 </p>
+<p> גללו את חלון ההתראות </p>
+<img src="GuideIcons/xDrip/14.png" width="240" height="320">
+  
+
+<p> תמונה מס' 15 </p>
+<img src="GuideIcons/xDrip/15.png" width="240" height="320">
+  
+
+<p> תמונה מס' 16 </p>
+<img src="GuideIcons/xDrip/16.png" width="240" height="320">
+  
+
+<p> תמונה מס' 17 </p>
+<p> גללו בחזרה את חלון ההתראות </p>
+<img src="GuideIcons/xDrip/17.png" width="240" height="320">
+  
+
+<p> תמונה מס' 18 </p>
+<p> לחצו על מקש ניתוק שיחה והכנסו להגדרות המכשיר , וגללו למסך הבא </p>
+<img src="GuideIcons/xDrip/18.png" width="240" height="320">
+  
+
+<p> תמונה מס' 19 </p>
+<p> אם המסך הבא לא מופיע לכם לחצו על "פרטי אפליקציות" במסך שמופיע לכם , גללו למטה והכנסו ל xDrip </p>
+<img src="GuideIcons/xDrip/19.png" width="240" height="320">
+  
+
+<p> תמונה מס' 20 </p>
+<p> גללו מעט למטה </p>
+<img src="GuideIcons/xDrip/20.png" width="240" height="320">
+  
+
+<p> תמונה מס' 21 </p>
+<img src="GuideIcons/xDrip/21.png" width="240" height="320">
+  
+
+<p> תמונה מס' 22 </p>
+<img src="GuideIcons/xDrip/22.png" width="240" height="320">
+  
+
+<p> תמונה מס' 23 </p>
+<img src="GuideIcons/xDrip/23.png" width="240" height="320">
+  
+
+<p> תמונה מס' 24 </p>
+<p> לחצו פעם אחת על לחצן אחורה ובחרו ב"הרשאות נוספות" </p>
+<img src="GuideIcons/xDrip/35.png" width="240" height="320">
+  
+
+<p> תמונה מס' 25 </p>
+<img src="GuideIcons/xDrip/24.png" width="240" height="320">
+  
+
+<p> תמונה מס' 26 </p>
+<p> אם הסימן הכחול נמצא על "אפשר" העבירו אותו ל"מנע" והחזירו אותו ל"אפשר" , ואם הוא על "מנע" העבירו אותו ל"אפשר" </p>
+<img src="GuideIcons/xDrip/25.png" width="240" height="320">
+  
+
+<p> תמונה מס' 27 </p>
+<p> גללו את חלון ההתראות ולחצו לחיצה ממושכת על סימון הBluethoot והמתינו מס' דקות (יש לשמור על המסך דולק עד שיקפוץ התראה כמו בתמונה 28) </p>
+<img src="GuideIcons/xDrip/26.png" width="240" height="320">
+  
+
+<p> תמונה מס' 28 </p>
+<p> המתינו עד לקבלת קריאה מהמשדר , ובחלונית שתקפוץ סמנו וי ולחצו על "התאמה"  </p>
+<img src="GuideIcons/xDrip/27.png" width="240" height="320">
+  
+
+<p> תמונה מס' 29 </p>
+<p> כעת לחצו לחיצה ארוכה על לחצן "אחורה" ועיברו לאפליקציית xDrip </p>
+<img src="GuideIcons/xDrip/28.png" width="240" height="320">
+  
+
+<p> תמונה מס' 30 </p>
+<p> כשיופיע המסך הבא לחצו ok </p>
+<img src="GuideIcons/xDrip/29.png" width="240" height="320">
+  
+
+<p> תמונה מס' 31 </p>
+<img src="GuideIcons/xDrip/30.png" width="240" height="320">
+  
+
+<p> תמונה מס' 32 </p>
+<p> אם אתם משתמשים גם באפליקציית AndroidAPS המשיכו בפעולה הבאה </p>
+<img src="GuideIcons/xDrip/31.png" width="240" height="320">
+  
+
+<p> תמונה מס' 33 </p>
+<p> גללו מעט למטה </p>
+<img src="GuideIcons/xDrip/32.png" width="240" height="320">
+  
+
+<p> תמונה מס' 34 </p>
+<p> אם אתם משתמשים גם באפליקציית AndroidAPS המשיכו בפעולה הבאה </p>
+<img src="GuideIcons/xDrip/33.png" width="240" height="320">
+  
+
+<p> תמונה מס' 35 </p>
+<p> בדקו שזה הטקסט שמופיע לכם , במידה ולא כיתבו במדויק כמו בתמונה ולחצו אישור </p>
+<img src="GuideIcons/xDrip/34.png" width="240" height="320">
+  
+<p> ע"כ הסבר למשתמשי דקסקום </p>
+  
+<p> משתמשי ליברה המשך מתמונה 4 </p>
+  
+
+<p> תמונה מס' 36 </p>
+<img src="GuideIcons/xDrip/36.png" width="240" height="320">
+  
+
+<p> תמונה מס' 37 </p>
+<img src="GuideIcons/xDrip/37.png" width="240" height="320">
+  
+
+<p> תמונה מס' 38 </p>
+<p> בצעו את השלבים הבאים מתמונה 18 עד 26 (כולל) </p>
+<img src="GuideIcons/xDrip/38.png" width="240" height="320">
+  
+
+<p> תמונה מס' 39 </p>
+<p> לאחר שלב זה בצעו את שלבים 27 , 28 </p>
+<img src="GuideIcons/xDrip/39.png" width="240" height="320">
+  
+<p> סוף מדריך xDrip </p>
+
+</div>
+  
+  
+<button class="collapsible">פתיחת חשבון בדקסקום</button>
+
+<div class="content">
+<p> הכנסו לאפליקציית CLARITY ופעלו ע"פ התמונות </p>
+
+<p> תמונה מס' 1 </p>
+<img src="GuideIcons/DexcomSignUp/01.png" width="240" height="320">
+  
+
+<p> תמונה מס' 2 </p>
+<p> לא ללחוץ בהודעה הלבנה </p>
+<img src="GuideIcons/DexcomSignUp/02.png" width="240" height="320">
+  
+
+<p> תמונה מס' 3 </p>
+<p> גללו מעט למטה </p>
+<img src="GuideIcons/DexcomSignUp/03.png" width="240" height="320">
+  
+
+<p> תמונה מס' 4 </p>
+<img src="GuideIcons/DexcomSignUp/04.png" width="240" height="320">
+  
+
+<p> תמונה מס' 5 </p>
+<img src="GuideIcons/DexcomSignUp/05.png" width="240" height="320">
+  
+
+<p> תמונה מס' 6 </p>
+<img src="GuideIcons/DexcomSignUp/06.png" width="240" height="320">
+  
+
+<p> תמונה מס' 7 </p>
+<img src="GuideIcons/DexcomSignUp/07.png" width="240" height="320">
+  
+
+<p> תמונה מס' 8 </p>
+<p> כעת עיברו לג'ימייל במחשב או בנייד (פתוח בנטפרי) </p>
+<img src="GuideIcons/DexcomSignUp/08.png" width="240" height="320">
+  
+
+<p> תמונה מס' 9 </p>
+<img src="GuideIcons/DexcomSignUp/09.png" width="240" height="320">
+  
+
+<p> תמונה מס' 10 </p>
+<img src="GuideIcons/DexcomSignUp/10.png" width="240" height="320">
+  
+
+<p> תמונה מס' 11 </p>
+<img src="GuideIcons/DexcomSignUp/11.png" width="240" height="320">
+  
+
+<p> תמונה מס' 12 </p>
+<img src="GuideIcons/DexcomSignUp/12.png" width="240" height="320">
+  
+
+<p> תמונה מס' 13 </p>
+<img src="GuideIcons/DexcomSignUp/13.png" width="240" height="320">
+  
+
+<p> תמונה מס' 14 </p>
+<p> גללו ללמטה ואשרו את הפרטים </p>
+<img src="GuideIcons/DexcomSignUp/14.png" width="240" height="320">
+  
+
+<p> תמונה מס' 15 </p>
+<img src="GuideIcons/DexcomSignUp/15.png" width="240" height="320">
+  
+
+<p> תמונה מס' 16 </p>
+<img src="GuideIcons/DexcomSignUp/16.png" width="240" height="320">
+  
+
+<p> תמונה מס' 17 </p>
+<p> לאחר שיופיע מסך זה , חיזרו לפלאפון והיכנסו לאפליקציית CLARITY  </p>
+<img src="GuideIcons/DexcomSignUp/17.png" width="240" height="320">
+  
+
+<p> תמונה מס' 18 </p>
+<img src="GuideIcons/DexcomSignUp/18.png" width="240" height="320">
+  
+
+<p> תמונה מס' 19 </p>
+<img src="GuideIcons/DexcomSignUp/19.png" width="240" height="320">
+  
+
+<p> תמונה מס' 20 </p>
+<img src="GuideIcons/DexcomSignUp/20.png" width="240" height="320">
+  
+
+<p> תמונה מס' 21 </p>
+<img src="GuideIcons/DexcomSignUp/21.png" width="240" height="320">
+  
+
+<p> תמונה מס' 22 </p>
+<img src="GuideIcons/DexcomSignUp/22.png" width="240" height="320">
+  
+
+<p> תמונה מס' 23 </p>
+<img src="GuideIcons/DexcomSignUp/23.png" width="240" height="320">
+  
+<p> זהו כעת יש לכם חשבון דקסקום  </p>
+</div>
+  
+
+<button class="collapsible">אפליקציית Dexcom G6</button>
+
+<div class="content">
+<p> היתחברות בפעם הראשונה , והפעלת סנסור פעיל/חדש </p>
+  
+
+<p> תמונה מס' 1 </p>
+<p> היכנסו להגדרות המכשיר </p>
+<img src="GuideIcons/Dexcom/01.png" width="240" height="320">
+  
+
+<p> תמונה מס' 2 </p>
+<img src="GuideIcons/Dexcom/02.png" width="240" height="320">
+  
+
+<p> תמונה מס' 3 </p>
+<img src="GuideIcons/Dexcom/03.png" width="240" height="320">
+  
+
+<p> תמונה מס' 4 </p>
+<img src="GuideIcons/Dexcom/04.png" width="240" height="320">
+  
+
+<p> תמונה מס' 5 </p>
+<img src="GuideIcons/Dexcom/05.png" width="240" height="320">
+  
+
+<p> תמונה מס' 6 </p>
+<img src="GuideIcons/Dexcom/06.png" width="240" height="320">
+  
+
+<p> תמונה מס' 7 </p>
+<p> חיזרו שלב אחד אחורה </p>
+<img src="GuideIcons/Dexcom/07.png" width="240" height="320">
+  
+
+<p> תמונה מס' 8 </p>
+<img src="GuideIcons/Dexcom/08.png" width="240" height="320">
+  
+
+<p> תמונה מס' 9 </p>
+<img src="GuideIcons/Dexcom/09.png" width="240" height="320">
+  
+
+<p> תמונה מס' 10 </p> 
+<p> היכנסו לאפליקציית Dexcom G6 </p>
+<img src="GuideIcons/Dexcom/10.png" width="240" height="320">
+  
+
+<p> תמונה מס' 11 </p>
+<img src="GuideIcons/Dexcom/11.png" width="240" height="320">
+  
+
+<p> תמונה מס' 12 </p>
+<img src="GuideIcons/Dexcom/12.png" width="240" height="320">
+  
+
+<p> תמונה מס' 13 </p>
+<img src="GuideIcons/Dexcom/13.png" width="240" height="320">
+  
+
+<p> תמונה מס' 14 </p>
+<img src="GuideIcons/Dexcom/14.png" width="240" height="320">
+  
+
+<p> תמונה מס' 15 </p>
+<img src="GuideIcons/Dexcom/15.png" width="240" height="320">
+  
+
+<p> תמונה מס' 16 </p>
+<img src="GuideIcons/Dexcom/16.png" width="240" height="320">
+  
+
+<p> תמונה מס' 17 </p>
+<img src="GuideIcons/Dexcom/17.png" width="240" height="320">
+  
+
+<p> תמונה מס' 18 </p>
+<img src="GuideIcons/Dexcom/18.png" width="240" height="320">
+  
+
+<p> 1תמונה מס' 9 </p>
+<img src="GuideIcons/Dexcom/19.png" width="240" height="320">
+  
+
+<p> תמונה מס' 20 </p>
+<img src="GuideIcons/Dexcom/20.png" width="240" height="320">
+  
+
+<p> תמונה מס' 21 </p>
+<img src="GuideIcons/Dexcom/21.png" width="240" height="320">
+  
+
+<p> תמונה מס' 22 </p>
+<img src="GuideIcons/Dexcom/22.png" width="240" height="320">
+  
+
+<p> תמונה מס' 23 </p>
+<img src="GuideIcons/Dexcom/23.png" width="240" height="320">
+  
+
+<p> תמונה מס' 24 </p>
+<img src="GuideIcons/Dexcom/24.png" width="240" height="320">
+  
+
+<p> תמונה מס' 25 </p>
+<img src="GuideIcons/Dexcom/25.png" width="240" height="320">
+  
+
+<p> תמונה מס' 26 </p>
+<img src="GuideIcons/Dexcom/26.png" width="240" height="320">
+  
+
+<p> תמונה מס' 27 </p>
+<img src="GuideIcons/Dexcom/27.png" width="240" height="320">
+  
+
+<p> תמונה מס' 28 </p>
+<img src="GuideIcons/Dexcom/28.png" width="240" height="320">
+  
+
+<p> תמונה מס' 29 </p>
+<img src="GuideIcons/Dexcom/29.png" width="240" height="320">
+  
+
+<p> תמונה מס' 30 </p>
+<img src="GuideIcons/Dexcom/30.png" width="240" height="320">
+  
+
+<p> תמונה מס' 31 </p>
+<img src="GuideIcons/Dexcom/31.png" width="240" height="320">
+  
+
+<p> תמונה מס' 32 </p>
+<img src="GuideIcons/Dexcom/32.png" width="240" height="320">
+  
+
+<p> תמונה מס' 33 </p>
+<img src="GuideIcons/Dexcom/33.png" width="240" height="320">
+  
+
+<p> תמונה מס' 34 </p>
+<img src="GuideIcons/Dexcom/34.png" width="240" height="320">
+  
+
+<p> תמונה מס' 35 </p>
+<img src="GuideIcons/Dexcom/35.png" width="240" height="320">
+  
+
+<p> תמונה מס' 36 </p>
+<img src="GuideIcons/Dexcom/36.png" width="240" height="320">
+  
+
+<p> תמונה מס' 37 </p>
+<img src="GuideIcons/Dexcom/37.png" width="240" height="320">
+  
+
+<p> תמונה מס' 38 </p>
+<img src="GuideIcons/Dexcom/38.png" width="240" height="320">
+  
+<p> סוף מדריך Dexcom G6 </p>
+</div>
+
+<button class="collapsible">החלפה למקלדת מקשים</button>
+
+<div class="content">
+
+<p>בכדי להחליף למקלדת מקשים יש לבצע את הפעולות הבאות:</p>
+<p>1. הגדרות > מערכת > שפות וקלט > מקלדת שמופיעה במסך >  ניהול של מקלדות שמופיעות במסך > להפעיל את המקלדת מקשים.</p>
+
+<p>2. כשאתה נמצא בתיבת טקסט, למשל בהערות, אתה צריך להוריד את שורת ההתראות העליונה מלמעלה למטה, ואתה תראה אפשרות "בחר שיטת הזנה", צריך ללחוץ על זה ולשנות מהמקלדת הרגילה למקלדת מקשים.</p>
+
+</div>
+
+<button class="collapsible">צילום מסך</button>
+
+<div class="content">
+<p>בכדי לשמור צילום מסך, יש ללחוץ בו זמנית על כפתור הניווט למטה + כפתור הניתוק למשך שנייה. </p>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</div>
+</body>
+</html>
