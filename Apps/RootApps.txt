@@ -1,1 +1,0 @@
-com.medtronic.diabetes.minimedmobile.eu,bin.mt.plus
