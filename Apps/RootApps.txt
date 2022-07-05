@@ -1,1 +1,1 @@
-com.medtronic.diabetes.minimedmobile.eu,bin.mt.plus
+com.medtronic.diabetes.minimedmobile.eu,bin.mt.plus,com.cohenkosherstore.removeApps
